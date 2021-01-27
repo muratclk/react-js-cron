@@ -30,7 +30,7 @@ export default function Minutes(props: MinutesProps) {
   )
 
   return (
-    <div className={internalClassName}>
+    <div className={internalClassName} style={{display:disabled ? "none": "inline"}}>
       {period === 'hour'
         ? locale.prefixMinutesForHourPeriod !== '' && (
             <span>
