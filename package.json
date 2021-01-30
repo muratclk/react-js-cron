@@ -1,6 +1,6 @@
 {
   "name": "@cashkl/react-js-cron-m",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A React cron editor with antd inspired by jqCron",
   "author": "Murat Celik <cashkl@yandex.com> (https://github.com/cashkl/)",
   "license": "MIT",

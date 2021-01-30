@@ -268,7 +268,7 @@ function getPeriodFromCronparts(cronParts: number[][]): PeriodType {
   } else if (cronParts[0].length > 0) {
     return 'hour'
   }
-  return 'minute'
+  return 'hour'
 }
 
 /**
