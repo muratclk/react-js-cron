@@ -13,6 +13,7 @@ export default function Minutes(props: MinutesProps) {
     locale,
     className,
     disabled,
+    disableMinute,
     readOnly,
     leadingZero,
     clockFormat,
@@ -30,7 +31,7 @@ export default function Minutes(props: MinutesProps) {
   )
 
   return (
-    <div className={internalClassName} style={{display:disabled ? "none": "inline"}}>
+    <div className={internalClassName} style={{display:disableMinute ? "none": "inline"}}>
       {period === 'hour'
         ? locale.prefixMinutesForHourPeriod !== '' && (
             <span>

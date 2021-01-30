@@ -32,6 +32,7 @@ export default function Cron(props: CronProps) {
     disabled = false,
     readOnly = false,
     leadingZero = false,
+    disableMinute= false,
     shortcuts = [
       '@yearly',
       '@annually',
@@ -258,6 +259,7 @@ export default function Cron(props: CronProps) {
       disabled,
       otherClearButtonPropsJSON,
       handleClear,
+      disableMinute,
     ]
   )
 
@@ -345,6 +347,7 @@ export default function Cron(props: CronProps) {
                 period={periodForRender}
                 className={className}
                 disabled={disabled}
+                disableMinute={disableMinute}
                 readOnly={readOnly}
                 leadingZero={leadingZero}
                 clockFormat={clockFormat}

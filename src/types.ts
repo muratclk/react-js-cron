@@ -63,6 +63,13 @@ export interface CronProps {
   disabled?: boolean
 
   /**
+   * Disable the minute component.
+   *
+   * Default: false
+   */
+   disableMinute?: boolean
+
+  /**
    * Make the cron component read-only.
    *
    * Default: false
@@ -246,6 +253,7 @@ export interface HoursProps extends FieldProps {
 export interface MinutesProps extends FieldProps {
   leadingZero: LeadingZero
   clockFormat?: ClockFormat
+  disableMinute:Boolean
 }
 export interface CustomSelectProps
   extends Omit<
